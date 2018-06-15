@@ -13,13 +13,12 @@ const sortByString = (s, t) => {
                       return (( elS === elT ) ? acc.concat(k) : acc)
                    }, []);
           })
-          .reduce(( acc, elI, i ) => {
+          .reduce(( acc, elI ) => {
             return acc.concat(elI
-                              .map( (el, l) => {
+                              .map( el => {
                                 return s.split('')[el];
                               }));
           },[]).join('');
-
 
 }
 
