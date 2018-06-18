@@ -16,7 +16,6 @@
 // 1¢, 3¢
 // 2¢, 2¢
 
-// https://www.geeksforgeeks.org/dynamic-programming-set-7-coin-change/
 
 const changePossibilities = ( aDenom, numOfDen, amount  ) => {
 
