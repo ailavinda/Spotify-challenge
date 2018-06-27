@@ -41,9 +41,7 @@ const CALENDAR_CONSTANTS = {
 
 }
 
-;
 const myYear = new Date().getFullYear();
-
 
 const allNumYear = [];
 let oneMonth = [];
@@ -66,7 +64,6 @@ class CalendarUpdater extends Component {
     updatable: false,
     confirming: false,
     loading: false
-
   }
 
   confirmHandler = () => {
@@ -83,9 +80,7 @@ class CalendarUpdater extends Component {
     
   }
 
-
   render() {
-
 
     const disabledInfo = {
       ...this.state.events
@@ -97,7 +92,6 @@ class CalendarUpdater extends Component {
 
     let eventForm = <EventForm 
             events={this.state.events}
-            
             newEventCancelled={this.newEventCancelHandler}
             newEventContinued={this.newEventContinueHandler} />;
 
