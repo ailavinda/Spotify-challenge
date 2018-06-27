@@ -1,0 +1,28 @@
+/*********************************************************/
+/* The App structure is according to:                    */
+/*                                                       */
+/*     Maximilian Schwarzmüller                          */
+/*                                                       */
+/* https://www.udemy.com/user/maximilian-schwarzmuller/  */
+/*********************************************************/
+
+.NavItems {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  display: flex;            /* Align next to each other   */
+  flex-flow: column;        /* Is for mobile devices      */
+  align-items: center;      /* Vertically centered        */
+  height: 100%;             /* full height of the Toolbar */
+
+}
+
+/* Adjusted for different devices */
+/* Below is for non-mobile equipment... */
+
+@media (min-width: 500px) {
+  .NavItems {
+    flex-flow: row; /* Should be next to each other on desktop: ;*/
+
+  }
+}

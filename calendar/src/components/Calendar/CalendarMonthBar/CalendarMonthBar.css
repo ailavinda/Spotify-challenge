@@ -1,0 +1,43 @@
+.MonthBar {
+    height: 44px;
+    display: flex;
+    color: blue;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    margin: 0;
+    position: relative;
+}
+
+.PrevMonth {
+  min-width: 192px;
+  padding: 0 10px;
+
+}
+
+.SchedMonth {
+  min-width: 192px;
+  padding: 0 10px;
+
+}
+
+.NxtMonth {
+  min-width: 192px;
+  padding: 0 10px;
+
+}
+
+.Days {
+  display: flex;
+  width: 636.36px;
+}
+
+.WeekDays {
+  height: 44px;
+  flex-flow: row;
+  color: blue;
+  width: 90.91px;
+  box-sizing: border-box;
+  border: 1px solid blue;
+  margin: 0;
+
+}

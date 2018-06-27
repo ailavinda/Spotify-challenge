@@ -1,0 +1,36 @@
+.YearBar {
+    display: flex;
+
+    /*align-content: space-between;*/
+    color: blue;
+    height: 44px;
+    /*width: 80%;*/
+    /*background: linear-gradient(#bc581e, #e27b36);*/
+    /*border-radius: 50% 50% 0 0;*/
+    /*box-shadow: inset -15px 0 #c15711;*/
+    box-sizing: border-box;
+    /*margin: 2% auto;*/
+    border: 1px solid blue;
+    margin: 0;
+    position: relative;
+}
+
+.Year {
+  /*justify-content: flex-start; */
+  min-width: 192px;
+  /*flex-flow: left;*/
+  padding: 0 10px;
+}
+
+.Name {
+  /*flex-flow: right;*/
+  min-width: 192px;
+  /*justify-content: flex-end;*/
+  padding: 0 10px;
+}
+
+.SpaceBtw {
+  /*flex-flow: center;*/
+  min-width: 192px;
+  padding: 0 10px;
+}
