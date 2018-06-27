@@ -1,0 +1,55 @@
+/*********************************************************/
+/* The App structure is according to:                    */
+/*                                                       */
+/*     Maximilian Schwarzmüller                          */
+/*                                                       */
+/* https://www.udemy.com/user/maximilian-schwarzmuller/  */
+/*********************************************************/
+
+.Toolbar {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #703B09;
+  display: flex;
+  /* to be aligned next to each other */
+  /* the default is row */
+  justify-content: space-between;
+  /* align vertically: */
+  align-items: center;
+  /* "0" top/bottom, 20px left/right */
+  padding: 0 20px;
+
+  /* Toolbar sized correctly with the padding */
+  box-sizing: border-box;
+
+  /* z- has to be low than Backdrop (100) */
+  /* Backdrop should be on top of Toolbar */
+  z-index: 90;
+}
+
+/* Mobile devices are first     */
+/* Next - add modifications for */
+/* other devices                */
+
+.Toolbar nav {
+  /* nav is relative to Toolbar, full height */
+  height: 100%;
+
+}
+
+.Logo {
+  height: 80%;
+}
+
+/* Mobile device, remove/make invisible toolbar nav items */
+
+@media (max-width: 499px) {
+  /* We are on the mobile device */
+  .DesktopOnly {
+    display: none; 
+    /* Desktops' default = "display: block;" */
+  }
+}

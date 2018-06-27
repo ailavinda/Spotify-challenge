@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import axios from 'axios';
 
 ///////////////////////////////////////////////////////////
 // The App structure is according to:                    //
@@ -8,23 +8,14 @@ import React, { Component } from 'react';
 // https://www.udemy.com/user/maximilian-schwarzmuller/  //
 ///////////////////////////////////////////////////////////
 
-import Layout from './hoc/Layout/Layout';
-import CalendarUpdater from './containers/CalendarUpdater/CalendarUpdater';
+// New instance of axios for calendar app 
+// with particular end point on:
+// firebase.google.com...
 
-class App extends Component {
-  render() {
-    return (
-      <div>
+// This is not a global instance...
 
-        <Layout>
+const instance = axios.create({
+  baseURL: 'https://react-my-calendar.firebaseio.com/'
+});
 
-          <CalendarUpdater />
-
-        </Layout>
-
-      </div>
-    );
-  }
-}
-
-export default App;
+export default instance;

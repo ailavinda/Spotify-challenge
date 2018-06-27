@@ -1,0 +1,6 @@
+.Content {
+  margin-top: 72px;
+}
+
+/* Toolbar is overlaping main page (Calendar) */
+/* Toolbar's height is 56px, so we adjust.    */

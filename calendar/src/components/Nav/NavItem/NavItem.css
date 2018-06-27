@@ -1,0 +1,75 @@
+/*********************************************************/
+/* The App structure is according to:                    */
+/*                                                       */
+/*     Maximilian Schwarzmüller                          */
+/*                                                       */
+/* https://www.udemy.com/user/maximilian-schwarzmuller/  */
+/*********************************************************/
+
+.NavItem {
+  /* For mobile devices */
+  margin: 10px 0;           /* top/bottom space between links */
+  box-sizing: border-box;
+  display: block;           /* No need in flex on mobile */
+                            /* Making sure the link could be centered vertically */
+  width: 100% 
+                            /* - remove height for active link appearance */
+                            /* No need in centering on mobile => display is "block" */
+}
+
+.NavItem a {
+  
+  color: #8F5C2C;
+  text-decoration: none; 
+  
+  width: 100%;
+  padding: 16px 10px;         /* 16px top/bottom... */
+  
+                              /* Need transparent once highlighted */
+  box-sizing: border-box;     /* Making sure it includes padding and the border */
+  display: block;             /* For the height to work */
+
+}
+  /* a:active - "when clicked upon" */
+  /* a.active class would be assigned later to indicate on which page we are */
+
+.NavItem a:hover,
+.NavItem a:active,
+.NavItem a.active {
+
+  color: #40A4C8;
+
+}
+
+/* Other media devices like desktop */
+
+@media (min-width: 500px) {
+    .NavItem {
+      margin: 0;
+      display: flex;          /* So link could be centered vertically */
+      height: 100%;           /* Active link appearance */
+      width: auto;            /* not 100% as above... */
+      align-items: center;
+
+    }
+
+    .NavItem a {
+      color: white;
+      height: 100%;
+      padding: 16px 10px;                   /* 16px top/bottom... */
+      border-bottom: 4px solid transparent; /* important once highlighted */
+
+    }
+    /* a:active - "when clicked upon" */
+    /* a.active class would be assigned later to indicate on which page we are */
+
+    .NavItem a:hover,
+    .NavItem a:active,
+    .NavItem a.active {
+
+      background-color: #8F5C2C;
+      border-bottom: 4px solid #40A4C8;     /* see "transparent" above */
+      color: white;
+
+    }
+}

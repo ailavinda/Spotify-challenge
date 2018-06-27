@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 ///////////////////////////////////////////////////////////
 // The App structure is according to:                    //
@@ -8,23 +8,17 @@ import React, { Component } from 'react';
 // https://www.udemy.com/user/maximilian-schwarzmuller/  //
 ///////////////////////////////////////////////////////////
 
-import Layout from './hoc/Layout/Layout';
-import CalendarUpdater from './containers/CalendarUpdater/CalendarUpdater';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
+// https://upload.wikimedia.org/wikipedia/commons/e/e9/Google_Calendar.png...
 
-        <Layout>
+import burgerLogo from '../../assets/images/Google_Calendar.png';
 
-          <CalendarUpdater />
+import classes from './Logo.css';
 
-        </Layout>
+const logo = (props) => (
+  <div className={classes.Logo} style={{height: props.height}} >
+    <img src={burgerLogo} alt="MyCalendar" />
+  </div>
+);
 
-      </div>
-    );
-  }
-}
-
-export default App;
+export default logo;

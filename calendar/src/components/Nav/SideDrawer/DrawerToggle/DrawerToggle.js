@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 ///////////////////////////////////////////////////////////
 // The App structure is according to:                    //
@@ -8,23 +8,16 @@ import React, { Component } from 'react';
 // https://www.udemy.com/user/maximilian-schwarzmuller/  //
 ///////////////////////////////////////////////////////////
 
-import Layout from './hoc/Layout/Layout';
-import CalendarUpdater from './containers/CalendarUpdater/CalendarUpdater';
+// "hamburger"-icon by Max...
 
-class App extends Component {
-  render() {
-    return (
-      <div>
+import classes from './DrawerToggle.css';
 
-        <Layout>
+const drawerToggle = (props) => (
+  <div className={classes.DrawerToggle} onClick={props.clicked} >
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+);
 
-          <CalendarUpdater />
-
-        </Layout>
-
-      </div>
-    );
-  }
-}
-
-export default App;
+export default drawerToggle;

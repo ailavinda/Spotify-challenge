@@ -1,0 +1,51 @@
+/*********************************************************/
+/* The App structure is according to:                    */
+/*                                                       */
+/*     Maximilian Schwarzmüller                          */
+/*                                                       */
+/* https://www.udemy.com/user/maximilian-schwarzmuller/  */
+/*********************************************************/
+
+.Calendar {
+  width: 100%;
+  margin: auto;
+  height: 250px;
+  align-content: space-between;
+  /* below "overflow" is for "height" when
+     calendar exids "250"... */
+  overflow: scroll;
+  text-align: center;
+  font-weight: bold;
+  /* "rem" - relative to dafault font size */
+  font-size: 1.2rem;
+}
+/* This above set up is for mobile devices... */
+
+
+/* Below we are tweeking it for bigger device... */
+@media (min-width: 1000px) and (min-height: 700px) {
+  .Calendar {
+    width: 700px;
+    height: 600px;
+
+  }
+}
+
+/* Media query... is for smaller device... */
+@media (min-width: 500px) and (min-height: 401px) {
+  .Calendar {
+    width: 650px;
+    height: 400px;
+    
+  }
+}
+
+/* Another media query... is for Portrite mode*/
+@media (min-width: 500px) and (min-height: 400px) {
+  .Calendar {
+    width: 650px;
+    height: 400px;
+    
+  }
+}
+

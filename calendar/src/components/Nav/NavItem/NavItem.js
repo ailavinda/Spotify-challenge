@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 ///////////////////////////////////////////////////////////
 // The App structure is according to:                    //
@@ -8,23 +8,19 @@ import React, { Component } from 'react';
 // https://www.udemy.com/user/maximilian-schwarzmuller/  //
 ///////////////////////////////////////////////////////////
 
-import Layout from './hoc/Layout/Layout';
-import CalendarUpdater from './containers/CalendarUpdater/CalendarUpdater';
+import classes from './NavItem.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
+// using "null" as a class name below - empty...
 
-        <Layout>
 
-          <CalendarUpdater />
+const navItem = (props) => (
 
-        </Layout>
+  <li className={classes.NavItem} >
+    <a 
+      href={props.link}
+      className={props.active ? classes.active : null } >{props.children}</a>
+  </li>
 
-      </div>
-    );
-  }
-}
+);
 
-export default App;
+export default navItem;

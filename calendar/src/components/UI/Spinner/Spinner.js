@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 ///////////////////////////////////////////////////////////
 // The App structure is according to:                    //
@@ -8,23 +8,19 @@ import React, { Component } from 'react';
 // https://www.udemy.com/user/maximilian-schwarzmuller/  //
 ///////////////////////////////////////////////////////////
 
-import Layout from './hoc/Layout/Layout';
-import CalendarUpdater from './containers/CalendarUpdater/CalendarUpdater';
+// Search for CSS spinners on the web...
 
-class App extends Component {
-  render() {
-    return (
-      <div>
+// https://projects.lukehaas.me/css-loaders/...
 
-        <Layout>
+// Adjust, then copy css code from
+// particular one... see Spinner.css...
 
-          <CalendarUpdater />
+// Will need "loading" state in Calendar...
 
-        </Layout>
+import classes from './Spinner.css';
 
-      </div>
-    );
-  }
-}
+const spinner = () => (
+  <div className={classes.Loader} >Loading...</div>
+);
 
-export default App;
+export default spinner;

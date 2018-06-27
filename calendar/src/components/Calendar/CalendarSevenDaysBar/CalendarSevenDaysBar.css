@@ -1,0 +1,57 @@
+.SevenDaysBar {
+  display: flex;
+  width: 636.36px;
+  
+}
+
+.WeekBar {
+  height: 44px;
+  flex-flow: row;
+  color: blue;
+  width: 90.91px;
+  box-sizing: border-box;
+    /*margin: 2% auto;*/
+  border: 1px solid blue;
+  margin: 0;
+
+}
+
+.AddEventButton {
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid #966909;
+    color: blue;
+    font-family: inherit;
+    font-size: 1.2em;
+
+}
+
+
+.AddEventButton:hover, .AddEventButton:active {
+    background-color: #A0DB41;
+    border: 1px solid #966909;
+    color: #966909;
+}
+
+.AddEventButton:disabled {
+    background-color: #C7C6C6;
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    color: #888888;
+}
+
+.AddEventButton:not(:disabled) {
+    animation: enable 0.3s linear;
+}
+
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

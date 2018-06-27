@@ -1,0 +1,49 @@
+/*********************************************************/
+/* The App structure is according to:                    */
+/*                                                       */
+/*     Maximilian Schwarzmüller                          */
+/*                                                       */
+/* https://www.udemy.com/user/maximilian-schwarzmuller/  */
+/*********************************************************/
+
+.SideDrawer {
+  position: fixed;  /* Should feel like a static element */
+  width: 280px;
+  max-width: 70%;   /* On super-narrow devices should not go over the edges */
+  height: 100%;     /* Full screen height */
+  left: 0;
+  top: 0;
+  z-index: 200;                         /* Above Backdrop = 100 */
+  background-color: white;
+  padding: 32px 16px;                   /* 32 top/bottom, 16 left/right */
+  box-sizing: border-box;               /* padding goes inside the box */
+  transition: transform 0.3s ease-out;  /* transition after transform function */
+                                        /* - See .Open and .Close classes below */
+
+}
+
+/* SideDrawer will be visible only on mobile devices */
+/* To test - switch browser into mobile device mode  */
+
+@media (min-width: 500px) {
+  .SideDrawer {
+    display: none;
+  }
+}
+
+/* Position defined under ".SideDrawer" */
+.Open {
+  transform: translateX(0);
+}
+
+/* Shift it to the left */
+.Close {
+  transform: translateX(-100%);
+}
+
+.Logo {
+  height: 11%;
+  margin-bottom: 32px; /* Gives more spece between logo and nav items on mobile */
+
+}
+

@@ -1,0 +1,39 @@
+/*********************************************************/
+/* The App structure is according to:                    */
+/*                                                       */
+/*     Maximilian Schwarzmüller                          */
+/*                                                       */
+/* https://www.udemy.com/user/maximilian-schwarzmuller/  */
+/*********************************************************/
+
+
+.Input {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+
+}
+
+.Label {
+  font-weight: bold;
+  display: block; /* will own its line */
+  margin-bottom: 4px;
+
+}
+
+.InputElement {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: white;
+  font: inherit;
+  padding: 3px 5px;
+
+}
+
+.InputElement:focus {
+  outline: none;
+  background-color: #ccc;
+
+}
